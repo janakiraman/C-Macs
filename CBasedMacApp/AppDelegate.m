@@ -40,6 +40,11 @@ BOOL AppDel_didFinishLaunching(struct AppDel *self, SEL _cmd, id notification) {
     objc_msgSend(self->window,
                  sel_getUid("makeKeyAndOrderFront:"),
                  self);
+    
+    //makeKeyOrderFront: NSWindow to show in bottom left corner of the screen
+    objc_msgSend(self->window,
+                 sel_getUid("new key:"),
+                 self);
     return YES;
 }
 
