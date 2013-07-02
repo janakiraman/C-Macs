@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface CFTestFile : NSObject
-
+@property (nonatomic, strong) NSString *master;
 @end
